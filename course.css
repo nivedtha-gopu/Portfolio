@@ -1,0 +1,124 @@
+/* General Styling */
+body {
+    font-family: 'Garamond', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header Navigation */
+header {
+    background: #fff;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 10px;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Course Container */
+.course-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+/* Course Header with Location and Arrow */
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.location {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Centered Arrow */
+.course-arrow {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #333;
+    border-radius: 50%;
+    font-size: 2.5em;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+    margin-left: 20px;
+    position: relative;
+    text-align: center;
+    line-height: 55px; /* Center the text vertically */
+}
+
+.course-arrow:before {
+    content: ""; /* Unicode for arrow symbol */
+    font-size: 1.5em;
+}
+
+/* Arrow Hover Effect */
+.course-arrow:hover {
+    transform: translateX(20px);
+}
+
+
+/* Course Details - Initially Hidden */
+.course-details {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    max-width: 500px;
+    background: linear-gradient(90deg, #FFFFFF,#808080, #C0C0C0,#000000); /* Linear gradient background */
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+    padding: 20px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.course-details.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Background Slide Effect */
+body {
+    background: linear-gradient(90deg, #ffffff, #f0f0f0);
+    animation: bg-slide 10s ease infinite;
+}
+
+@keyframes bg-slide {
+    0%, 100% { background-position: 0% 0%; }
+    50% { background-position: 100% 0%; }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="circle-text">
+                <span class="circle-text-content">PORTF</span>
+                <span class="circle black-circle"></span>
+                <span class="circle-text-content">LI</span>
+                <span class="circle black-circle"></span>
+            </div>
+            <br><br><br>
+            <div class="middle-text">
+                <span class="middle-text-content">Welcome to my portfolio showcasing my skills and projects.</span>
+            </div>
+        </div>
+        <div class="arrow-down" onclick="scrollToContent()">&#x25BC;</div>
+
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Skills Section (Second Layer) -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <!-- Skill Cards -->
+            <div class="skill-card">
+                <img src="C:\Users\Admin\OneDrive\Documents\model_portfolio\word.png" alt="Word">
+                <p>Word</p>
+            </div>
+            <div class="skill-card">
+                <img src="C:\Users\Admin\OneDrive\Documents\model_portfolio\excel.png" alt="Excel">
+                <p>Excel</p>
+            </div>
+            <div class="skill-card">
+                <img src="C:\Users\Admin\OneDrive\Documents\model_portfolio\powerpoint.png" alt="PowerPoint">
+                <p>PowerPoint</p>
+            </div>
+            <div class="skill-card">
+                <img src="C:\Users\Admin\OneDrive\Documents\model_portfolio\HTML.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill-card">
+                <img src="C:\Users\Admin\OneDrive\Documents\model_portfolio\CSS.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-card">
+                <img src="C:\Users\Admin\OneDrive\Documents\model_portfolio\js.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <img src="C:\Users\Admin\OneDrive\Documents\model_portfolio\python.png" alt="Python">
+                <p>Python</p>
+            </div>
+        </div>
+
+        <!-- Arrow Down for Skills -->
+        <div class="arrow-down" onclick="scrollToProjects()">&#8595;</div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Build amazing projects</h1>
+            <p>The fastest way to showcase your skills and projects.</p>
+            <button class="cta-button" onclick="toggleProjects()">View Projects</button>
+        </div>
+    </section>
+
+    <!-- Project Information Section -->
+    <section class="projects-section" id="projects"> <!-- Initially hidden -->
+        <h2 class="section-title">My Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Flamo Online Game</h3>
+            <p>This is an online game project developed using HTML, CSS, and JavaScript.</p>
+            <a href="https://nivedha20022000.github.io/Flamo_Game/" class="project-link">Play Flamo Game</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Voice-based Email</h3>
+            <p>This is a voice-based email project built using Python.</p>
+            <video width="320" height="240" controls>
+                <source src="py voice video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <script src="portfolio.js"></script> <!-- Link to external JS file -->
+</body>
+</html>

@@ -1,0 +1,354 @@
+/* General Styles */
+body {
+    font-family: 'Century Schoolbook', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, MintCream, LightSkyBlue);
+    background-size: 300% 100%;
+    animation: slideBackground 10s ease infinite;
+    text-align: center;
+}
+
+/* Background Gradient Slide Effect */
+@keyframes slideBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Header Styles */
+header {
+    font-size: 2rem;
+    position: relative;
+    height: 100vh;
+    background-color: #FFD966; /* Light yellow color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.circle-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Portfolio Bounce Animation */
+.circle-text-content {
+    font-size: 10rem;
+    font-weight: bold;
+    animation: bounce 1s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Circle Text Styling */
+.circle-text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative; /* Ensure the circles are positioned correctly */
+}
+
+.circle-text-content {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333; /* Text color for Portfolio */
+    z-index: 1; /* Ensure text appears over the circles */
+}
+
+/* Circle Styling */
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000; /* Black circle color */
+}
+
+/* Adjusted Circle Positioning */
+.black-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #000; /* Black color for circles */
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Portfolio Text Spacing */
+.circle-text-content:first-child {
+    margin-right: -10px; /* Adjust to bring closer to the first circle */
+}
+
+.circle-text-content:last-child {
+    margin-left: -10px; /* Adjust to bring closer to the last circle */
+}
+
+/* Skills Section (Second Layer) */
+#skills {
+    width: 100%;
+    padding: 100px 0;
+    background: linear-gradient(90deg, LightSkyBlue, LightCyan, GhostWhite, Aqua);
+    background-size: 300% 100%;
+    animation: gradientSlide 15s ease infinite; /* Slide background gradient effect */
+    text-align: center;
+    position: relative;
+}
+
+/* Gradient Slide Animation for Skills Section */
+@keyframes gradientSlide {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Block Arrow Down Styling (Same Arrow Symbol) */
+.arrow-down {
+    font-size: 3rem;
+    color: #333;
+    margin-top: 40px;
+    border: 2px solid #333;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: arrowBounce 2s infinite ease-in-out; /* Bounce effect for the arrow */
+}
+
+/* Arrow Bounce Animation */
+@keyframes arrowBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Allow skills to wrap to the next line */
+    margin-bottom: 50px; /* Space for the arrow */
+}
+
+
+/* Skill Card Zoom Effect */
+.skill-card {
+    width: 150px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.skill-card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.skill-card:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Block Arrow Down Styling */
+.arrow-down {
+    font-size: 3rem;
+    color: #333;
+    margin-top: 40px;
+    border: 2px solid #333;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: arrowBounce 2s infinite ease-in-out; /* Bounce effect for the arrow */
+}
+
+/* Arrow Bounce Animation */
+@keyframes arrowBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, LightBlue, LightCyan, SlateGray, black);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+/* Projects Section */
+.projects-section {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    padding: 50px 20px;
+    background: linear-gradient(90deg, LightBlue, LightCyan, SlateGray, black); /* Initial gradient */
+    background-size: 300% 100%;
+    animation: projectGradientSlide 10s ease infinite; /* Sliding gradient effect */
+    text-align: center;
+}
+
+.projects-section.show {
+    opacity: 1;
+    max-height: 2000px; /* adjust depending on the content */
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    display: block;
+    font-size: 1.1em;
+    color: #0066cc;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Menu Bar Styles */
+.menu-bar {
+    position: absolute;
+    top: 20px; /* Adjust this value to control the vertical positioning */
+    right: 20px; /* Position the menu bar on the right side */
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar ul {
+    list-style-type: none; /* Remove bullets */
+    display: flex; /* Align the menu items in a row */
+    gap: 20px; /* Add spacing between menu items */
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Set menu item text color */
+    font-size: 1.2rem; /* Font size */
+    padding: 10px 20px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+.menu-bar ul li a:hover {
+    color: white;
+    background-color: #333; /* Change background color on hover */
+}
+
+/* Ensure the menu bar remains on top */
+.menu-bar {
+    z-index: 1000;
+}
+

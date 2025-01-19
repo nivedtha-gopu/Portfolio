@@ -1,0 +1,257 @@
+/* General Styling */
+body {
+    font-family: Palatino, serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #ff99cc, #99ccff, #ffcc99, #ccccff, #ccffcc);
+    background-size: 400% 400%;
+    animation: bg-slide 10s ease-in-out infinite;
+    color: #333;
+}
+
+/* Background Slide Effect */
+@keyframes bg-slide {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header Navigation */
+header {
+    background: #fff;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 10px;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+
+/* Button Styling for "Check out my course" */
+.course-button {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    background-color: transparent;
+    color: #333;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: Palatino, serif;
+    margin: 0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the button */
+.course-button:hover {
+    
+    color: #2585e6;
+    border-color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Active effect for the button */
+
+
+.course-button:active {
+    
+    color: #fff;
+    border-color: #fff;
+    transform: translateY(0);
+}
+
+
+/* About Section Styling */
+.about-section {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Techno Effect Heading (About Me) */
+.techno-effect {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: #000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.techno-effect::before, .techno-effect::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: #23a6d5;
+    animation: techno-fade 4s linear infinite;
+}
+
+.techno-effect::before {
+    left: -50%;
+}
+
+.techno-effect::after {
+    right: -50%;
+}
+
+@keyframes techno-fade {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+/* Falling Text Effect (Paragraphs) */
+.falling-text {
+    font-family: 'Palatino', serif;
+    font-size: 1.2em;
+    color: #000;
+    position: relative;
+    animation: fallingText 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fallingText {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Down Arrow Styling */
+.down-arrow-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.down-arrow {
+    font-size: 5em;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.down-arrow:hover {
+    transform: translateY(10px);
+    opacity: 0.7;
+}
+
+.down-arrow:active {
+    transform: scale(1.2);
+}
+
+/* Fun Facts Section Styling */
+
+
+.fun-facts-content {
+    font-family: 'Palatino', serif;
+    font-size: 1.2em;
+    display: none;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    line-height: 2.0;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Space between Fun Facts and Hobbies */
+.spacing {
+    margin-top: 40px;
+}
+
+/* Hobbies Section */
+.hobbies-content {
+    font-family: 'Palatino', serif;
+    font-size: 1.2em;
+    display: none;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    line-height: 2.0;
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Button Hover Effect */
+.button-hover {
+    display: inline-block;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.button-hover span {
+    position: relative;
+    z-index: 2;
+}
+
+.button-hover span:last-child {
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.button-hover:hover span:last-child {
+    transform: translateX(10px);
+}
+
+.button-hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background-color: hsla(330, 40%, 98%, 0.668);
+    z-index: 1;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+}
+
+.button-hover:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+

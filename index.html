@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+           
+        </div>
+       
+    </header>
+
+    <section class="hero">
+        <h1>Hello, I'm NivedhaGopu</h1>
+        <p>Welcome to my portfolio. I am passionate about web development and love creating beautiful, responsive, and functional websites.</p>
+        <p>Let me take you on a journey through my skills and projects!</p>
+    </section>
+
+    <section class="color-boxes">
+        <!-- Home -->
+        <div class="color-box gray-box">
+            <a href="index.html" class="menu-link">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+            </a>
+        </div>
+        <!-- About Me -->
+        <div class="color-box black-box">
+            <a href="about.html" class="menu-link">
+                <i class="fas fa-user"></i>
+                <p>About Me</p>
+            </a>
+        </div>
+        <!-- Portfolio -->
+        <div class="color-box light-gray-box">
+            <a href="portfolio.html" class="menu-link">
+                <i class="fas fa-briefcase"></i>
+                <p>Portfolio</p>
+            </a>
+        </div>
+        <!-- Contact -->
+        <div class="color-box blue-box">
+            <i class="fas fa-envelope"></i>
+        <p>Contact</p>
+        <button onclick="openContactPopup()" class="menu-link contact-button">
+        </button>
+        </div>
+    </section>
+
+    <div id="contact-popup" class="popup">
+        <div class="popup-content">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> <a href="nivedhagopu02@gmail.com">nivedhagopu02@gmail.com</a></p>
+            <p><strong>Phone:</strong> +8438613837</p>
+            <p><strong>Location:</strong> Chennai</p>
+            <button onclick="closeContactPopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
